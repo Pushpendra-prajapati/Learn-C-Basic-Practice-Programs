@@ -1,0 +1,22 @@
+// Inserting element in array on user choice.
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[100];
+    int i=0; char choice;
+    do{
+        cout<<"Enter "<<i+1<<" element in array :";
+        cin>>arr[i];
+        i++;
+        cout<<"Do you want to enter "<<i+1<<" element then press y otherwise enter anything :";
+        cin>>choice;
+
+    } while(choice=='Y' || choice=='y');
+
+    for(int k=0; k<i; k++){
+        cout<<arr[k]<<endl;
+    }
+    return 0;
+}
