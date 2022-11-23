@@ -1,0 +1,30 @@
+
+//Inserting element at specific position in array Question solved.
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[100]={2,6,5,8,10};
+
+    int position,value,i;
+
+    cout<<"Enter position/index :";
+    cin>>position;
+
+    cout<<"Enter value :";
+    cin>>value;
+
+    for(i=4; i>=position; i--){
+        arr[i+1]=arr[i];
+    }
+
+    arr[position]=value;
+
+    cout<<"Your new array values : ";
+
+    for(i=0; i<6; i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
