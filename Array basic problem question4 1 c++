@@ -13,6 +13,8 @@ int main(){
     for(int i=0; i<10; i++){
         if(arr[i]==check){
             cout<<check<<" present at "<<i<<" index.";
+            cout<<"Found at location " <<i+1;
+            break;
         }
     }
     return 0;
