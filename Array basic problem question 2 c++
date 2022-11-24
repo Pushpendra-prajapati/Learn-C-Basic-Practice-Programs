@@ -1,0 +1,23 @@
+//deleting element from specific position in array.
+//Let's do it---
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[5]={3,5,6,7,10};
+
+    int position,i;
+
+    cout<<"Enter index :";   //you enter index number for deleting value this index.
+    cin>>position;
+
+    for(i=position;i<5;i++){
+        arr[i]=arr[i+1];
+    }
+
+    for(i=0;i<4;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
