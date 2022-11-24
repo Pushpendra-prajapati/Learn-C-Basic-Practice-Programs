@@ -1,0 +1,24 @@
+// Finding maximum and minimum in array in c++ . Both solution.
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int array[5]={3,5,6,10,24};
+    int max=array[0];
+    int min=array[0];
+    for(int i=1; i<5; i++){
+        if(array[i]>max){
+          max=array[i];
+        }
+    }
+    
+    for(int i=1; i<5; i++){
+        if(array[i]<min){
+          min=array[i];
+        }
+    }
+    cout<<max<<endl;
+
+    return 0;
+}
